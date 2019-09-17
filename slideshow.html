@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <style>
+      body {
+        margin: 40px;
+      }
+      div.head{
+          background: url('assets/images/eye-of-the-storm-cropped.jpg');
+          position:relative;
+          display: inline-block;
+          left: 0px;
+          right: 0px;
+          margin:0 0px;
+          padding:0 10px;
+          height:283px;
+          width:100%;
+      }
+      h1:before,h1:after {
+          display: inline-block;
+          position:absolute;
+          top: 150;
+          right: 20px;
+          width: 20px;
+          height: 100%;
+          background:inherit;
+          background-position:100% 100%;
+      }
+      h1:before {
+          left:20px;
+          background-position: 0 100%;
+      }
+   </style>
+  </head>
+  <body>
+    <div class='head'>
+    <br>
+    <br>
+    <br>
+    <H1 style='margin-top:150;color:white;size:250;'>Hurricane Force</H1>
+    </div>
+    <Br>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/index.html">Hurricane Force</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/index.html">Home</a></li>
+          <li><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/dorian.html">Hurricane Dorian</a></li>
+          <li><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/data.html">Data</a></li>
+          <li><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/frequency.html">Frequency</a></li>
+          <li><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/forum.html">Forum</a></li>
+          <li><a href="file://baec-host01/BAEC%20Student%20Data/christopheroneill/Documents/stormforce/slideshow.html">Slideshow</a></li>
+        </ul>
+      </div>
+    </nav>
+    <H2>Slideshow</H2>
+    <Br>
+    <img class="mySlides" src="images/Img-1.jpg" width=100%>
+    <img class="mySlides" src="images/Img-2.jpg" width=100%>
+    <img class="mySlides" src="images/Img-3.jpg" width=100%>
+    <img class="mySlides" src="images/Img-4.jpg" width=100%>
+    <img class="mySlides" src="images/Img-5.jpg" width=100%>
+    <img class="mySlides" src="images/Img-6.jpg" width=100%>
+    <img class="mySlides" src="images/Img-7.jpg" width=100%>
+    <img class="mySlides" src="images/Img-8.jpg" width=100%>
+    <img class="mySlides" src="images/Img-9.jpg" width=100%>
+    <img class="mySlides" src="images/Img-10.jpg" width=100%>
+    <img class="mySlides" src="images/Img-11.jpg" width=100%>
+    <img class="mySlides" src="images/Img-12.jpg" width=100%>
+    <img class="mySlides" src="images/Img-13.jpg" width=100%>
+    <img class="mySlides" src="images/Img-14.jpg" width=100%>
+    <img class="mySlides" src="images/Img-15.jpg" width=100%>
+    <img class="mySlides" src="images/Img-16.jpg" width=100%>
+    <img class="mySlides" src="images/Img-122.jpg" width=100%>
+    <br>
+    <center>
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </center>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
