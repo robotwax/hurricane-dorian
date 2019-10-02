@@ -1,0 +1,212 @@
+html {
+    font-size: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4, h5, p, ul, ol {
+    margin: 0 20px;
+    padding: 1rem 0;
+}
+
+
+p{
+    margin: 0 20px;
+    padding: 0rem 0;
+}
+
+p1 {
+    margin: 0 20px;
+    padding: 5rem 0;
+}
+
+body{
+    font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    color: #000;/* Sets the text colour to black*/
+    background: transparent;/* Sets the page background colour to transparent*/
+}
+
+h1, h2, h3 {
+    font-weight: bold; /*Sets the page background to transparent*/
+    text-transform: uppercase; /*Capitalises (uppercase) each heading style*/
+}
+
+h2{
+    font-size: 1.5rem;/* Sets the font-size to 1.5 times the html value*/
+}
+
+h3{
+    font-size: 1.25rem; /* Sets the font-size to 1.25 times the html value*/
+}
+
+p{
+    font-size: 1rem;
+}
+
+/* Link Styles*/
+
+
+a:link, a:visited, a:active {
+    color: #0088cc;/* Sets the default colour for links*/
+    text-decoration: none; /* Removes default link underline style*/
+}
+
+a:hover{
+    text-decoration: underline; /* Adds links underline style on hover*/
+}
+
+/* Image Styles*/
+
+img{
+    float: left; /* Aligns images to the left by default*/
+    margin: 0 0 1rem 0;
+}
+
+img.right{
+    float: right; /* Aligns images to the right*/
+    margin: 0 0 0 1rem;
+}
+
+/* Table Styles*/
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 8px;
+    border-bottom: 2px solid #000;
+}
+
+
+table td{
+    font-size:0.9rem;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 8px 6px;
+}
+
+
+caption{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+table tr:nth-of-type(even){
+    background-color: rgb(225, 225, 225)
+}
+
+table tr:nth-of-type(odd){
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+
+/* Format navbar inside header*/
+
+header .navbar{
+    /* Add 30 px top and bottom padding*/
+    padding: 1px 0;
+}
+
+header .navbar-default {
+    background: #ffffff; /* assigns background colour*/
+    border: none; /*doesn't apply border*/
+}
+/* assigns colour to navbar links */
+header .navbar-default .navbar-nav a{
+    color:  #0088cc; /* assigns colour to navbar links */
+    padding: 15px 15px 3px 15px;
+    font-size: 1rem;
+}
+
+/* applies a colour on hover */
+header .navbar-default .navbar-nav .active a:hover {
+    color: #EEC856;
+}
+/* styling for active link*/
+header .navbar-default .navbar-nav .active a {
+    font-weight: 700;
+    color: #EEC856;
+    background: transparent;
+    border-bottom: 4px solid #EEC856;
+    text-shadow: none;
+}
+/* apply on hover style to active link*/
+header .navbar-default .navbar-nav .active a:hover {
+    color: #E15D5F;
+    background: transparent;
+    text-shadow:  none;
+}
+
+
+/* SLide show (carousel) Styles */
+
+.carousel.fade{
+    opacity: 1;
+    margin-top: 100px;
+}
+
+.carousel.fade .item{
+    transition: opacity ease-out.7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+
+.carousel.fade .item:first-child{
+    top: auto;
+    opacity: 1;
+    position: relative;
+}
+
+
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+}
+
+
+/*Footer Styles*/
+.footerR {
+    text-align: right;
+    border-left: 1px solid #999;
+}
+@media only screen and (max-width: 991px) {
+    footer{
+        width:98%;
+        margin: 0 auto;
+    }
+
+
+    .footerR {
+        border-top: 1px solid #999;
+        border-left: none;
+        padding-top: 0.8rem;
+        text-align: left;
+    }
+}
